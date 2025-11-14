@@ -1,0 +1,125 @@
+# source 'https://cdn.cocoapods.org/'
+
+# platform :ios, '15.1'
+
+# begin
+#   require File.join(File.dirname(`node --print "require.resolve('expo/package.json')"`), 'scripts/autolinking')
+# rescue LoadError
+#   # Expo isn't installed; skip its autolinking helper.
+# end
+
+# require_relative '../node_modules/react-native/scripts/react_native_pods'
+# require_relative '../node_modules/react-native-permissions/scripts/setup'
+
+# prepare_react_native_project!
+
+# # Request only the iOS permissions you actually need
+# setup_permissions(['Camera'])
+
+# target 'Hued' do
+#   use_expo_modules!
+
+#   config = use_native_modules!
+
+#   use_react_native!(
+#     :path => config[:reactNativePath],
+#     :hermes_enabled => true,
+#     :app_path => "#{Pod::Config.instance.installation_root}/.."
+#   )
+
+#   # Firebase/Google pods that require modular headers when linked statically
+#   pod 'GoogleUtilities',      :modular_headers => true
+#   pod 'PromisesObjC',         :modular_headers => true
+#   pod 'FirebaseCore',         :modular_headers => true
+#   pod 'FirebaseCoreInternal', :modular_headers => true
+
+#   pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
+#   post_install do |installer|
+#     react_native_post_install(
+#       installer,
+#       config[:reactNativePath],
+#       :mac_catalyst_enabled => false
+#     )
+
+#     min_ios = '15.1'
+#     installer.pods_project.targets.each do |target|
+#       target.build_configurations.each do |cfg|
+#         cfg.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = min_ios
+#       end
+#     end
+#     installer.pods_project.build_configurations.each do |cfg|
+#       cfg.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = min_ios
+#     end
+#   end
+# end
+# Use CocoaPods CDN
+
+source 'https://cdn.cocoapods.org/'
+
+# Set a literal, high enough deployment target (Hermes + new RN pods require >= 13.4)
+platform :ios, '15.1'
+
+# --- Autolinking bootstrap (Expo optional) ---
+begin
+  # Keep this only if you actually use expo-* packages.
+  require File.join(File.dirname(`node --print "require.resolve('expo/package.json')"`), 'scripts/autolinking')
+rescue LoadError
+  # Expo not installed; skip its autolinking helper.
+end
+
+# React Native autolinking
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+
+# RNPermissions autolinking (keep only if you use it)
+require_relative '../node_modules/react-native-permissions/scripts/setup'
+
+prepare_react_native_project!
+
+# Request only the iOS permissions you need
+setup_permissions(['Camera'])
+
+# ✅ Build pods as frameworks with static linkage
+# This avoids the "Swift pods cannot be integrated as static libraries" warning
+use_frameworks! :linkage => :static
+
+target 'Hued' do
+  # Expo modules (safe to call even if the begin/rescue above skipped the require)
+  use_expo_modules!
+
+  # RN autolinking config
+  config = use_native_modules!
+  react_native_path = (config && config[:reactNativePath]) || '../node_modules/react-native'
+
+  use_react_native!(
+    :path => react_native_path,
+    :hermes_enabled => true,
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+
+  # Keep at least one explicit pod so CocoaPods always sees deps
+  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
+  # ❌ Do NOT manually list Firebase pods here.
+  # Let @react-native-firebase/* autolink the right Firebase pods+versions.
+
+  post_install do |installer|
+    # RN default post-install (use the resolved RN path, not the 'config' hash)
+    react_native_post_install(
+      installer,
+      react_native_path,
+      :mac_catalyst_enabled => false
+    )
+
+    # 🔒 Enforce the deployment target across ALL pods & project configs
+    min_ios = '15.1'
+    installer.pods_project.targets.each do |t|
+      t.build_configurations.each do |cfg|
+        cfg.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = min_ios
+      end
+    end
+    installer.pods_project.build_configurations.each do |cfg|
+      cfg.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = min_ios
+    end
+  end
+end

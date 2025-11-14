@@ -1,0 +1,288 @@
+{
+  "onboarding": {
+    "find": "Find The Best Fashion Style For You",
+    "there": "There are many clothes with designs that are suitable for you today",
+    "get": "LET’S GET STARTED"
+  },
+  "walkthrough": {
+    "hued": "Hued",
+    "skip": "Skip",
+    "dont": "DON'T MISS OUT",
+    "help": " Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "accept": "ACCEPT",
+    "add": "ADD YOUR LOCATION",
+    "camera": "CAMERA",
+    "meko": " Lorem Ipsum is simply dummy text of the printing and typesettin industry."
+  },
+  "welcome": {
+    "welcome": "Welcome To, Hued",
+    "apple": "Continue with Apple",
+    "google": "Continue with Google",
+    "facebook": "Continue with Facebook",
+    "tiktok": "Continue with Tik-Tok",
+    "email": "Continue with Email",
+    "or": "OR",
+    "dont": "Don’t have an account?",
+    "signup": "Sign Up"
+  },
+  "details": {
+    "enter": "Enter your basic details",
+    "enter1": "Enter your email Address",
+    "enter2": "Confirm your password",
+    "enter4": "Enter your email Address",
+    "enter3": "Enter your password",
+    "please": "Please enter your credentials to create account",
+    "name": "Name",
+    "forgot": "Forgot Password?",
+    "username": "Username",
+    "email": "Email",
+    "gender": "Gender",
+    "password": "Password",
+    "confirm": "Confirm Password",
+    "continue": "CONTINUE",
+    "please1": "Please input your email address to continue",
+    "please2": "Please input your password to login",
+    "brand": "Brand Name",
+    "year": "Year Founded",
+    "city": "City"
+  },
+  "home": {
+    "hued": "Hued",
+    "shirts": "Shirts",
+    "2": "2 items",
+    "jackets": "Jackets",
+    "1": "1 items",
+    "pants": "Pants"
+  },
+  "profile": {
+    "profile": "Profile",
+    "gray": "Anastassia Gray",
+    "edit": "Edit Profile",
+    "anna": "Anna05",
+    "fav": "Favourites",
+    "terms": "Terms & Conditions",
+    "contact": "Contact Us",
+    "change": "Change Password",
+    "logout": "Logout",
+    "dele": "Delete Account",
+    "are": "This action is irreversible and will permanently delete all your data, settings and profile information."
+  },
+  "edit": {
+    "edit": "Edit Profile",
+    "picture": "Edit Picture",
+    "name": "Name",
+    "username": "Username",
+    "email": "Email",
+    "gender": "Gender",
+    "save": "Save Changes"
+  },
+  "fav": {
+    "fav": "Favourites",
+    "reversible": "Reversible angora cardigan"
+  },
+  "contact": {
+    "contact": "Contact Us",
+    "leave": "Leave us a message, we will get contact with you as soon as possible.",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "what": "What do you want to tell us about?",
+    "send": "Send Inquiry"
+  },
+  "change": {
+    "change": "Change Password",
+    "old": "Old Password",
+    "new": "New Password",
+    "confirm": "Confirm Password"
+  },
+  "toastMessage": {
+    "name": "Name should not be empty.",
+    "Brandname": "Brand Name should not be empty.",
+    "year": "Year Founded should not be empty.",
+    "city": "City should not be empty.",
+    "userName": "UserName should not be empty.",
+    "reason": "Reason should not be empty.",
+    "gender": "Gender should not be empty.",
+    "email": "Email should not be empty.",
+    "otp": "OTP should not be empty.",
+    "emailPattern": "Please enter a valid email.",
+    "passwordLength": "Password must be at least 6 characters.",
+    "oldpasswordLength": "Old Password must be at least 6 characters.",
+    "passwordMatch": "Confirm password did not match.",
+    "confirmPassword": "Confirm password should not be empty.",
+    "phoneNumber": "Phone number should not be empty",
+    "about": "About should not be empty",
+    "uploadImage": "Please select an image",
+    "serverError": "Server Error. Please try again",
+    "currentPass": "Current password should have 6 characters",
+    "confirmPas": "Please confirm your password",
+    "currentNotNewPassword": "New password should not equal to current Password",
+    "querySend": "Your query successfully sent",
+    "sendLink": "We send an email verify you email",
+    "additionalImage": "Please select additional image",
+    "coverImage": "Please select cover image",
+    "websiteUrl": "Please enter a valid website URL",
+    "aboutUs": "Please tell about you",
+    "date": "Please select a date",
+    "passwordChange": "Password changed successfully!",
+    "success": "Email and phone number verified, you've signed up successfully!",
+    "currentPassword": "Current password should not be empty.",
+    "newPassword": "New password should not be empty.",
+    "oldPassword": "Old password should not be empty.",
+    "logout": "You have been logged out successfully .",
+    "editprofile": "Profile successfully edited",
+    "changepassword": "Password changed successfully",
+    "link": "Link successfully sent!",
+    "passwordMismatch": "Confirm password does not match",
+    "subject": "Subject should not be empty.",
+    "message": "Message should not be empty.",
+    "category": "Collection should not be empty.",
+    "password": "Password should not be blank."
+  },
+  "logout": {
+    "logout": "Logout",
+    "are": "Are you sure you want to log out? ",
+    "yes": "Yes",
+    "no": "No",
+    "delete": "Delete",
+    "del": "Are you sure you want to delete this outfit?"
+  },
+  "forgot": {
+    "reset": "Reset Password",
+    "enter": "Enter the email that is associated with your account and we will send you a link to reset your password.",
+    "email": "Email"
+  },
+  "upload": {
+    "upload": "Upload File",
+    "take": "Take Photo",
+    "gallery": "Upload from Gallery"
+  },
+  "category": {
+    "matching": "Matching colors found",
+    "category": "Category",
+    "sweat": "Sweatshirts",
+    "jeans": "Jeans",
+    "shirt": "Shirts",
+    "track": "Track Pants",
+    "jackets": "Jackets",
+    "summer": "Summer Collection",
+    "winter": "Winter Wear",
+    "add": "Add New",
+    "age": "Age ",
+    "style": "Style",
+    "sports": "Sports Wear",
+    "casual": "Casual",
+    "gothic": "Gothic Fashion",
+    "vintage": "Vintage",
+    "boho": "Boho - Chic",
+    "weather": "Weather",
+    "spring": "Spring",
+    "autum": "Autumn",
+    "occasion": "Occasion",
+    "party": "Party",
+    "ethnic": "Ethnic Wear",
+    "night": "Night Wear",
+    "lounge": "Lounge Wear",
+    "price": "Price",
+    "male": "Male",
+    "female": "Female",
+    "nonbinary": "Non-binary",
+    "gender": "Gender"
+  },
+  "create": {
+    "create": "Create Outfit",
+    "give": "Give Name",
+    "outfit": "Outfit 1",
+    "category": "Category",
+    "sweat": "Sweatshirts",
+    "save": "Save Outfit",
+    "update": "Update Outfit"
+  },
+  "continue": {
+    "continue": "Continue ",
+    "brand": "As a Brand",
+    "User": "As a User"
+  },
+  "explore": {
+    "explore": "Explore",
+    "select": "Select Category",
+    "all": "All",
+    "bomb": "Bomber Jacket",
+    "leo": "Leo Gray",
+    "wardrobe": "Wardrobe"
+  },
+  "notifications": {
+    "notifications": "Notifications",
+    "today": "Today",
+    "flat": "Flat 50% off on your first medicine offer !",
+    "offer": "Offer Details",
+    "james": "James Charles",
+    "new": "just shared something new in closet",
+    "yesterday": "Yesterday",
+    "5min": "5 min"
+  },
+  "filters": {
+    "filters": "Filters",
+    "location": "Location",
+    "gender": "GENDER",
+    "male": "Male",
+    "female": "Female",
+    "non": "Non - Binary",
+    "season": "SEASON",
+    "summer": "Summer",
+    "winter": "Winters",
+    "spring": "Spring",
+    "age": "AGE GROUP",
+    "occasion": "OCCASION",
+    "style": "STYLE",
+    "price": "PRICE RANGE",
+    "reset": "Reset",
+    "apply": "Apply"
+  },
+  "collection": {
+    "colle": "Collections",
+    "add": "New collection",
+    "tshirt": "T-Shirts",
+    "hoodies": "Hoodies"
+  },
+  "no": {
+    "no": "No data available"
+  },
+  "del": {
+    "delete": "Delete Collection?",
+    "del": "All your saved outfits in this collection will be deleted if you delete this collection."
+  },
+  "public": {
+    "public": "Do you want to make this outfit public?",
+    "private": "Do you want to make this outfit private?",
+    "pub": "Outfit will be shown to all the users in Explore section, if you make this outfit public.",
+    "make": "Public this outfit?",
+    "makeit": "Make it public",
+    "makeitp": "Make it private",
+    "pp": "Outfit will be removed from Explore section, if you make this outfit private."
+  },
+  "outfit": {
+    "age": "Age",
+    "weather": "Weather",
+    "category": "Category",
+    "style": "Style",
+    "occasion": "Occasion",
+    "name": "Name",
+    "similar": "Similar Outfits",
+    "matching": "Matching Colors"
+  },
+  "gender": {
+    "gender": "Select Gender",
+    "male": "Male",
+    "female": "Female",
+    "non": "Non-binary",
+    "genders": "Gender",
+    "year": "Select Year"
+  },
+  "menu": {
+    "edit": "Edit",
+    "del": "Delete",
+    "add": "Add to collection",
+    "loc": "Type Location"
+  }
+}

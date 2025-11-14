@@ -1,0 +1,20 @@
+current directory: /Volumes/Apnitor/Hued/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Volumes/Apnitor/Hued/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250919-47205-ya63ko sitelibdir\=./.gem.20250919-47205-ya63ko clean
+
+current directory: /Volumes/Apnitor/Hued/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250919-47205-ya63ko sitelibdir\=./.gem.20250919-47205-ya63ko
+compiling nkf.c
+linking shared-object nkf.bundle
+ld: warning: search path '/opt/homebrew/Cellar/openssl@3/3.4.0/lib' not found
+ld: warning: search path '/opt/homebrew/Cellar/openssl@3/3.4.0/lib' not found
+
+current directory: /Volumes/Apnitor/Hued/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250919-47205-ya63ko sitelibdir\=./.gem.20250919-47205-ya63ko install
+/usr/bin/install -c -m 0755 nkf.bundle ./.gem.20250919-47205-ya63ko
+
+current directory: /Volumes/Apnitor/Hued/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250919-47205-ya63ko sitelibdir\=./.gem.20250919-47205-ya63ko clean

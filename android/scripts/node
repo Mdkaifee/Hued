@@ -1,0 +1,4 @@
+#!/bin/bash
+# Thin wrapper so Gradle-launched processes can find Node via our custom script.
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec "$SCRIPT_DIR/node-wrapper.sh" "$@"
