@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+
+    // React Native Gradle plugin for RN 0.80+
+    includeBuild("../node_modules/@react-native/gradle-plugin")
+}
+
+plugins {
+    id("com.facebook.react.settings") version "0.80.2"
+}
+
+extensions.configure(com.facebook.react.ReactSettingsExtension) {
+    it.autolinkLibrariesFromCommand()
+}
+
+rootProject.name = "Hued"
+
+include(":app")
+
+includeBuild("../node_modules/@react-native/gradle-plugin")

@@ -1,0 +1,3 @@
+#!/bin/bash
+export PATH=$PATH:/Users/apnitorsolutions/.nvm/versions/node/v21.6.1/bin
+exec /Users/apnitorsolutions/.nvm/versions/node/v21.6.1/bin/node "$@"

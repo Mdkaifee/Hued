@@ -1,35 +1,30 @@
 buildscript {
     ext {
-        buildToolsVersion = "35.0.0"
+        buildToolsVersion = "34.0.0"
         minSdkVersion = 24
-        compileSdkVersion = 35
-        targetSdkVersion = 35
-        ndkVersion = "26.1.10909125"
-        kotlinVersion = "2.1.20"
-        // kotlinVersion = "1.8.22"
-        //    enableNewArchitecture = false
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        ndkVersion = "27.2.12479018"
+        kotlinVersion = "1.9.22"
     }
+
     repositories {
         google()
         mavenCentral()
-        gradlePluginPortal()
-
     }
 
     dependencies {
-        // classpath("com.android.tools.build:gradle")
-        classpath("com.android.tools.build:gradle:8.1.2")
+        classpath("com.android.tools.build:gradle:8.8.1")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+        classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("com.google.gms:google-services:4.4.2")
         classpath("com.google.firebase:firebase-crashlytics-gradle:3.0.2")
-        // classpath("com.facebook.react:react-native-gradle-plugin:0.80.2")
-        
     }
 }
 
-
-
-// apply plugin: "expo-root-project"
-apply plugin: "com.facebook.react.rootproject"
-
-
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
